@@ -11,13 +11,23 @@ function updateClock(){
     let seconds = new Date().getSeconds();
     
     let ampm = "AM"
+    
+    if(hour>6 && hour<20){
+        ampmUpdate.style.backgroundColor = "#FDCF74";
+        ampmUpdate.style.color = "black";
+    }
+    else{
+        ampmUpdate.style.backgroundColor = "#443c3c";
+        ampmUpdate.style.color = "white";
+    }
 
     if(hour>12){
         hour = hour - 12;
         ampm = "PM"
-        ampmUpdate.style.backgroundColor = "#FDCF74";
-        ampmUpdate.style.color = "black";
+        
     }
+
+    
 
     hourUpdate.innerText = hour;
     minutesUpdate.innerText = minutes;
