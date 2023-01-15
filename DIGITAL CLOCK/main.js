@@ -12,6 +12,8 @@ function updateClock(){
     
     let ampm = "AM"
     
+    // am and pm  part
+
     if(hour>6 && hour<20){
         ampmUpdate.style.backgroundColor = "#FDCF74";
         ampmUpdate.style.color = "black";
@@ -27,12 +29,22 @@ function updateClock(){
         
     }
 
-    
+    // added 0 before single digit
+
+    hour = hour < 10 ? "0" + hour : hour;
+
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    // disply part
 
     hourUpdate.innerText = hour;
     minutesUpdate.innerText = minutes;
     secondsUpdate.innerText = seconds;
     ampmUpdate.innerText = ampm;
+
+    // random call 
 
     setTimeout(() => {
         updateClock()
