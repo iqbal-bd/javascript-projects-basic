@@ -9,20 +9,26 @@
 </head>
 <body>
     
-    <form class="form" id="form">
-        <img src="./img/math.jpg" alt="" class="img">
-        <h3 class="score" id="score">score: 0 </h3>
+    <div class="div-body">
+        <form class="form" id="form">
+            <img src="./img/math.jpg" alt="" class="img">
+            <h3 class="score" id="score">score: 0 </h3>
+    
+            <h1>What is 
+                <span id="questionOne">1</span>
+                 multiply by 
+                <span id="questionTwo">1</span>
+                ?
+            </h1>
 
-        <h1 id="question">What is 1 multiply by 1 ?</h1>
+            <input type="text" class="input" id="input" placeholder=" Enter your answer" autofocus autocomplete="off">
 
-        <input type="text" class="input" id="input" placeholder=" Enter your answer" autofocus autocomplete="off">
-
-        <div class="div-btn">
-            <button type="submit" class="btn">submit</button>
-        </div>
+            <div class="div-btn">
+                <button type="submit" id="btn">submit</button>
+            </div>
+        </form>
         
-
-    </form>
+    </div>
 
     <script src="main.js"></script>
 </body>

@@ -19,11 +19,10 @@ body{
 
 }
 
-.form {
-    background-color: white;
+.div-body{
+    background: lightblue;
     padding: 25px;
     box-shadow: 0 5px 10px rgba(150,150,15, .8);
-    background-color: lightyellow;
     border-radius: 15px;
     margin: 15px;
 }
@@ -49,7 +48,7 @@ body{
     display: flex;
     justify-content: center;
 }
-.btn{
+#btn{
     text-align: center;
     display: block;
     margin: 20px;
@@ -60,7 +59,7 @@ body{
     cursor: pointer;
 }
 
-.btn:hover{
+#btn:hover{
     background-color: #5a5454;
     color: whitesmoke;
 }
